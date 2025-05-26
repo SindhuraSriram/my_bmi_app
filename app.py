@@ -13,7 +13,6 @@ def main():
     if st.button("Calculate BMI"):
         bmi = calculate_bmi(weight, height)
         st.write(f"Your BMI is {bmi}")
-
         if bmi < 18.5:
             st.warning("Underweight")
         elif bmi < 25:
@@ -25,3 +24,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
